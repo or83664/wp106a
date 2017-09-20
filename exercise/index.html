@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      h1 {
+        color: green;
+      }
+      table, td, th {    
+          border: 1px solid #0E0D0D;
+          text-align: center;
+      }
+      
+      table {
+          margin-left:auto; 
+          margin-right:auto;
+          border-collapse: collapse;
+          width: 50%;
+      }
+      
+      th, td {
+          padding: 15px;
+      }
+
+      th{
+        font-family: myFirstFont;
+      }
+
+      a {
+        color: red;
+      }
+      </style>
+  </head>
+  <body bgcolor="lightblue">
+      <div style="text-align:center;"> <h1>Hello World!</h1></div>
+    <table>
+    <tr>
+      <td>Version</td>
+      <td><script>document.write(process.versions.node)</script></td>
+    </tr>
+    <tr>
+      <td>Chrome</td>
+      <td><script>document.write(process.versions.chrome)</script></td>
+    </tr>
+    <tr>
+      <td>Electron</td>
+      <td><script>document.write(process.versions.electron)</script></td>
+    </tr>
+  </table>
+  <div style="text-align:center;" > <a href="https://www.w3schools.com" target="_blank" > Learn more about HTML</a></div>
+  </body>
+</html> 
