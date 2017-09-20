@@ -1,5 +1,8 @@
 {
+  //主程式的名字
   "name"    : "hello",
+  //版本
   "version" : "0.1.0",
+  //主程式
   "main"    : "main.js"
 }

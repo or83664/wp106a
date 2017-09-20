@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\01-hello",
+    "\\01-hello\\a",
+    "\\02-calculator"
+  ],
+  "SelectedNode": "\\01-hello\\a\\main.js",
+  "PreviewInSolutionExplorer": false
+}

@@ -11,6 +11,8 @@ function createWindow () {
   win = new BrowserWindow({width: 800, height: 600})
 
   // and load the index.html of the app.
+  //dirname=>檔案的名稱
+  //file://是指檔案;http://是指網址
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
@@ -18,6 +20,7 @@ function createWindow () {
   }))
 
   // Open the DevTools.
+  //automatically start developer tools
   win.webContents.openDevTools()
 
   // Emitted when the window is closed.
