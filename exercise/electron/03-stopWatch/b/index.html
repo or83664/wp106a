@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+input { width:30px }      
+    </style>
+<!--    <title>碼表 StopWatch</title> -->
+  </head>
+  <body>
+<script>
+var counter=10
+var state="init"
+
+function showCounter() {
+  var CounterLable = document.getElementById('counter')
+
+  CounterLable.innerText = counter 
+  if(state==="start")counter--
+  if (counter>=0){
+    setTimeout(showCounter, 1000);
+  }
+  else{
+    document.getElementById('message').innerText="Time's up"
+    counter = 10
+    CounterLable.innerText=counter
+  }
+}
+
+function toggle(){
+  if (state==="init"){
+  setTimeout(showCounter,1000)
+  state="start"
+  }
+  else{
+  state=(state==="stop")?"start":"stop"
+  }
+  document.getElementById('toggle').innerText=(state==="start")?"start":"stop"
+ 
+}
+</script> 
+  <center> 
+    <label id="counter">10</label><br/>
+    <button id="toggle" onclick="toggle()">start</button><br/>
+   <label id="message"></label>
+  </center>  
+  </body>
+</html>

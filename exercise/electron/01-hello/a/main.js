@@ -1,3 +1,4 @@
+
 const {app, BrowserWindow} = require('electron')
 //const=>ex6的寫法
 //require套用套件(傳回一系列物件)
